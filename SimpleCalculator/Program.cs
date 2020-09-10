@@ -17,7 +17,18 @@ namespace SimpleCalculator
 
 
             Console.WriteLine("Enter first number: ");
-            
+
+            string num1 = Console.ReadLine();
+
+            Console.WriteLine("Enter second number: ");
+
+            string num2 = Console.ReadLine();
+
+            Console.WriteLine("Enter operation, (+, -, *, / ): ");
+
+            string operation = Console.ReadLine();
+
+           
 
 
             try
