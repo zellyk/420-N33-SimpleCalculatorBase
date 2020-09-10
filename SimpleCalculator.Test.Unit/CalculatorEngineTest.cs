@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CalculatorEngine;
 
 namespace SimpleCalculator.Test.Unit
 {
     [TestClass]
     public class CalculatorEngineTest
     {
-        private readonly CalculatorEngine _calculatorEngine = new CalculatorEngine();
+        private readonly Engine _calculatorEngine = new Engine();
 
         [TestMethod]
         public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
