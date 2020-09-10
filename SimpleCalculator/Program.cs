@@ -12,6 +12,12 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+
+
+            Console.WriteLine("Enter first number: ");
+            
+
+
             try
             {
                 //Class to convert user input
