@@ -16,36 +16,50 @@ namespace SimpleCalculator
         {
 
 
-            Console.WriteLine("Enter first number: ");
 
-            string num1 = Console.ReadLine();
-
-            Console.WriteLine("Enter second number: ");
-
-            string num2 = Console.ReadLine();
-
-            Console.WriteLine("Enter operation, (+, -, *, / ): ");
-
-            string operation = Console.ReadLine();
-
-           
-
-
+       
             try
             {
-                //Class to convert user input
-                InputConverter inputConverter = new InputConverter();
 
-                //Class to perform actual calculations
-                Engine calculatorEngine = new Engine();
 
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                string operation = Console.ReadLine();
+                while (true)
+                {
 
-                double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                    //Class to convert user input
+                    InputConverter inputConverter = new InputConverter();
 
-                Console.WriteLine(result);
+                    //Class to perform actual calculations
+                    Engine calculatorEngine = new Engine();
+
+                    // Asking user to enter first number
+                    Console.WriteLine("Enter first number: ");
+                    double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+
+                    Console.WriteLine();
+
+
+                    // Asking user to enter second number
+                    Console.WriteLine("Enter second number: ");
+                    double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+
+                    Console.WriteLine();
+
+
+                    // Asking for the operation
+                    Console.WriteLine("Enter the operation that you need(+, -, * or /): ");
+                    string operation = Console.ReadLine();
+
+
+
+                    double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+
+                    Console.WriteLine();
+
+                    Console.WriteLine("The Result is " + result);
+
+                }
 
             } catch (Exception ex)
             {
