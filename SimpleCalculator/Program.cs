@@ -52,10 +52,12 @@ namespace SimpleCalculator
                     string operation = Console.ReadLine();
 
 
+                    Console.WriteLine();
+
 
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                    
 
-                    Console.WriteLine();
 
                     Console.WriteLine("The Result is " + result);
 
