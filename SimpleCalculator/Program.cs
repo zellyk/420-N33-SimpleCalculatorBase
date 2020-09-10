@@ -56,10 +56,12 @@ namespace SimpleCalculator
 
 
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                    StringBuilder resultPrint = new StringBuilder();
+                    resultPrint.Append(String.Format("The value {0:.00} " + operation + " {1:.00} is equal to {2:.00}.", firstNumber, secondNumber, result));
+                    Console.WriteLine(resultPrint.ToString());
+
+
                     
-
-
-                    Console.WriteLine("The Result is " + result);
 
                 }
 
