@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace CalculatorEngine
 {
-    public class Engine
+    public class Engine 
+        
+        
     {
         public double Calculate(string argOperation, double argFirstNumber, double argSecondNumber)
         {
             double result;
-
+            
             switch (argOperation.ToLower())
             {
                 case "add":
@@ -29,6 +31,10 @@ namespace CalculatorEngine
                 case "divide":
                 case "/":
                     result = argFirstNumber / argSecondNumber;
+                    break;
+                case"square root":
+                case "^2":
+                    result = Math.Sqrt(argFirstNumber);
                     break;
                 default:
                     throw new InvalidOperationException("Specified operation is not recognized.");
