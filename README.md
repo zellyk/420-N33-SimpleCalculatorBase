@@ -1,8 +1,7 @@
 # 420-N33-SimpleCalculatorBase
-Lab Starter Package (Lab 1)
+##Lab Starter Package (Lab 1)
 
-Simple calculator with added square root feature.
+Simple calculator with square root feature added.
 
-made by:
-
-Mohamad Salameh & Jonathan Marcotte
+## made by:
+## Mohamad Salameh & Jonathan Marcotte
