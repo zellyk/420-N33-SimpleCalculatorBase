@@ -32,8 +32,9 @@ namespace CalculatorEngine
                 case "/":
                     result = argFirstNumber / argSecondNumber;
                     break;
-                case"square root":
+                case "square root":
                 case "^2":
+                case "√":
                     result = Math.Sqrt(argFirstNumber);
                     break;
                 default:

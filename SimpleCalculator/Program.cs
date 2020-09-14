@@ -15,7 +15,8 @@ namespace SimpleCalculator
         static void Main(string[] args)
         {
 
-
+            Console.WriteLine("This is a simple calculator, enter 2 values and an operator. For square root enter the same number twice.");
+            Console.WriteLine();
 
 
             try
