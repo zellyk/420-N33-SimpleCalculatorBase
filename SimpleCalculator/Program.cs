@@ -49,7 +49,7 @@ namespace SimpleCalculator
 
 
                     // Asking for the operation
-                    Console.WriteLine("Enter the operation that you need(+ or add, - or subtract, * or multiply, / or divide and ^2 or √): ");
+                    Console.WriteLine("Enter the operation that you need(+ or add, - or subtract, * or multiply, / or divide and square root or \u221A): ");
                     string operation = Console.ReadLine();
 
 
@@ -59,12 +59,6 @@ namespace SimpleCalculator
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
                    
 
-                    // String builder for result
-                    StringBuilder resultPrint = new StringBuilder();
-
-                    // Printing results
-                    resultPrint.Append(String.Format("The value {0:f2} " + calculatorEngine.getOperator() + " {1:f2} is equal to {2:f2}.", firstNumber, secondNumber, result));
-                    Console.WriteLine(resultPrint.ToString());
 
                     Console.WriteLine();
 
