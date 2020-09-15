@@ -55,16 +55,35 @@ namespace SimpleCalculator
 
                     Console.WriteLine();
 
-
+                    // Calculation object
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
                    
+
+                    // String builder for result
                     StringBuilder resultPrint = new StringBuilder();
 
-                    resultPrint.Append(String.Format("The value {0:f2} " + operation + " {1:f2} is equal to {2:f2}.", firstNumber, secondNumber, result));
-                    
+                    // Printing results
+                    resultPrint.Append(String.Format("The value {0:f2} " + calculatorEngine.getOperator() + " {1:f2} is equal to {2:f2}.", firstNumber, secondNumber, result));
                     Console.WriteLine(resultPrint.ToString());
 
+                    Console.WriteLine();
 
+
+                    // Asking to go again
+                    Console.WriteLine("Would you like to do another operation? (Y/N)");
+                    string option = Console.ReadLine().ToLower();
+                    while (!option.Equals("y") && !option.Equals("n"))
+                    {
+                        Console.WriteLine("Enter (Y/N)");
+                        option = Console.ReadLine();
+                        Console.WriteLine();
+                    }
+
+                    if (option.Equals("n"))
+                    {
+
+                        break;
+                    }
 
 
                 }

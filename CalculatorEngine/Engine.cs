@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace CalculatorEngine
 {
-    public class Engine 
-        
-        
-    {
+    public class Engine
+
+      {
+
+        private string operation = "";
+
+
         public double Calculate(string argOperation, double argFirstNumber, double argSecondNumber)
         {
             double result;
-            
+
             switch (argOperation.ToLower())
             {
                 case "add":
@@ -42,7 +45,11 @@ namespace CalculatorEngine
             }
             return result;
         }
-        
 
+        public string getOperator()
+        {
+            return operation;
+
+        }
     }
 }
